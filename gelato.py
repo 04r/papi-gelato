@@ -40,6 +40,8 @@ def stap1():
 hoeveel = int(input('Hoeveel bolletjes wilt u?\n'))
 
 def mainnn():
+	print("Welkom bij Papi Gelato")
+	wait(1)
 	if hoeveel < 4:
 		for i in range(1,hoeveel+1):
 			kk = input(f"Welke smaak wilt u voor bolletje nummer {i}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ")
