@@ -40,12 +40,16 @@ def stap1():
 hoeveel = int(input('Hoeveel bolletjes wilt u?\n'))
 
 def mainnn():
-	stap1()
 	if hoeveel < 4:
+		for i in range(1,hoeveel+1):
+			kk = input(f"Welke smaak wilt u voor bolletje nummer {i}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ")
 		stap2()
 	elif hoeveel >5:
 		if hoeveel <9:
 			print("Dan krijgt u van mij een bakje met {} bolletjes".format(hoeveel))
+			for i in range(1,hoeveel+1):
+				kk = input(f"Welke smaak wilt u voor bolletje nummer {i}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ")
+				stap2()
 	elif hoeveel >9:
 		print("Sorry, zulke grote bakken hebben we niet")
 	else:
